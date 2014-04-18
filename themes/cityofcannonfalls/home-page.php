@@ -107,5 +107,4 @@ Template Name: Home
 	</div>
 </div>
 
-
 <?php get_footer(); ?>
