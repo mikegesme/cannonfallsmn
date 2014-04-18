@@ -1,0 +1,627 @@
+/* Style for City of Cannon Falls Website
+        http://www.ci.cannon-falls.mn.us/
+	Designed by Mike Gesme
+	January, 2012
+	All Rights Reserved
+*/
+
+body {
+	background: #223D50;
+	font-family: Century Gothic, sans-serif;
+}
+
+/* global */
+
+.page_heading {
+	font-size: 18px;
+	color: #8A9D3C;
+}
+
+a {
+	outline: 0;
+	border: none;
+}
+
+a:visited {
+	color: #4F81BD;
+}
+
+.sub_heading {
+	font-size: 14px;
+	color: #8A9D3C;
+	margin-bottom: 0;
+}
+
+.main_paragraph {
+//	margin-right: 5px;
+	font-size: 14px;
+	text-align: justify;	
+}
+
+.big_text {
+	color: red;
+}
+
+.canceled {
+	text-decoration: line-through;
+}
+
+.main_paragraph a {
+	color: #4F81BD;
+	text-decoration: none;
+}
+
+.detail_paragraph {
+	margin-top: 5px;
+	margin-bottom: 0px;
+	padding: 0;
+	font-size: 14px;
+}
+
+.bold_heading {
+	font-weight: bold;
+}
+
+.box_heading {
+	color: salmon;
+	font: bold 15px helvetica;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+ul {
+	list-style: none;
+}
+
+/* social media links at top of page */
+
+#social {
+	width: 1000px;
+	margin: 0 auto;
+	color: white;
+	text-align: right;
+}
+
+#social img {
+	border: none;
+}
+
+#wrapper {
+	height: 1000px;
+	width: 1000px;
+	margin: 0 auto;
+	background: white;
+	box-shadow: 0px 0px 15px #000;
+}
+
+#header {
+	background: #223D50;
+	border: 5px solid white;
+	height: 150px;
+}
+
+/* Banner section */
+
+#banner {
+	float: left;
+	width: 492px;
+}
+
+#banner img {
+	border: none;
+}
+
+/* Rotating photos */
+
+#photos1 {
+	float: left;
+	width: 243px;
+	height: 150px;
+	color: white;
+	border-left: 6px solid white;
+}
+
+#photos2 {
+	float: left;
+	width: 243px;
+	height: 150px;
+	color: white;
+	border-left: 6px solid white;
+}
+
+#header ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#header ul li {
+	float: left;
+	position: absolute;
+	list-style: none;
+}
+
+.show {
+	z-index: 500;
+}
+
+/* Navigation */
+
+#side_menu {
+	float: left;
+	border-left: 5px solid white;
+	background:gray;
+	width: 200px;
+	height: 835px;
+}
+
+#side_menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#side_menu ul .active {
+//	background-image: url('../img/menu_link_bg_active.png');
+	background: white;
+	pointer-events: none;
+	cursor: default;
+
+}
+
+#side_menu ul .active a {
+	color: #223D50;
+}
+
+#side_menu ul li:hover {
+	background-image: url('../img/menu_link_bg_hover.png');
+	color: white;
+}
+
+#side_menu li {
+	height: 30px;
+	background-image: url('../img/menu_link_bg.png');
+	position: relative;
+}
+
+#side_menu a {
+	text-decoration: none;
+	color: #F4ECA2;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 195px;
+	height: 30px;
+	margin-top: 0px;
+	outline: 0;
+}
+
+.menu_sublist {
+	display: none;
+	background: #223D50;
+}
+
+#menu_government_list li {
+	background-image: none;
+}
+
+#menu_departments_list li {
+	background-image: none;
+}
+
+#menu {
+	width: 990px;
+	border-left: 5px solid white;
+	border-right: 5px solid white;
+}
+
+#menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#menu li {
+	display: inline;
+	margin: 0;
+}
+
+
+
+#menu img {
+	border: none;
+	padding: none;
+}
+
+#menu a {
+	text-decoration: none;
+	margin: 0;
+	border: none;
+}
+
+#side_menu li:hover .active {
+	background: red;
+}
+
+#side_menu_links {
+	height: 730px;
+}
+
+#welcome img {
+	width: 200px;
+	float: bottom;
+}
+
+/* Content */
+
+#content {
+	border-left: 10px solid white;
+	float: left;
+	width: 775px;
+	height: 835px;
+	border-right: 10px solid white;
+}
+
+/* Home Page */
+
+#main_column {
+	width: 520px;
+	height: 830px;
+	float: left;
+	margin-left: 0px;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+
+#home_text_area {
+	clear: both;
+}
+
+.left_wrap {
+	float: left;
+	margin-right: 10px;
+}
+
+.right_wrap {
+	float: right;
+	margin-left: 10px;
+}
+
+#notices {
+	background: #F4ECA2;
+	height: 100%;
+	width: 515px;
+}
+
+#notices li {
+//	display:none;
+	margin-left:-20px;
+}
+
+#more {
+	margin-top:15px;
+	font-size: 12px;
+} 
+
+#right_column {
+	float: right;
+	height: 833px;
+	width: 250px;
+}
+
+#quicklinks {
+	background: #223D50;
+	height: 25px;
+	text-align: center;
+	font-size: 14px;
+	width: 250px;
+	margin-left: 4px;
+}
+#quicklinks form {
+	color: white;
+	font-weight: bold;
+}
+
+#quicklinks form label {
+	margin-right: 10px;
+}
+
+#spotlight {
+}
+
+#note {
+	position: relative;
+	width: 350px;
+	margin-top: 20px;
+	float: right;
+	margin-right: -103px;
+}
+
+#moving-container {
+	height: 200px;
+	width: 257px;
+	float: left;
+}
+
+#moving {
+	height: 200px;
+	width: 257px;
+	float: left;
+}
+#not_moving {
+	width: 43px;
+	height: 200px;
+	float: left;
+}
+
+#not_moving img {
+	display: none;
+}
+
+#meetings {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#meetings p {
+	margin-top: 0px;
+}
+
+#upcoming {
+	margin-left: 5px;
+}
+
+#upcoming a {
+	font-size: 12px;
+}
+.edge {
+	display: none;
+}
+
+/* Image links on right */
+
+#links {
+	float: left;
+	margin-top: 0px;
+}
+
+#links img {
+	border: none;
+}
+
+/* Footer */
+
+#footer {
+	margin: 0 auto;
+	width: 988px;
+	padding: 5px;
+	text-align: center;
+	color: #F4ECA2;
+	font-size: 12px;
+}
+
+#footer a {
+	color: #F4ECA2;
+}
+
+/* Government */
+
+#mayor {
+	width: 775px;
+	height: 110px;
+//	background: red;
+}
+
+#council {
+	width: 775px;
+	height:330px;
+}
+
+.twobytwo {
+	width: 775px;
+	height: 110px;
+//	background: red;
+}
+
+.member_card {
+	margin: 20px auto;
+	width: 355px;
+	background: url('../img/member_bg.png') right no-repeat;
+//	border: 1px solid red;
+}
+
+.twobytwo .member_card {
+	float: left;
+	margin-left: 20px;
+}
+
+#mayor_card {
+	background: url('../img/member_bg.png') right no-repeat;
+	height: 110px;
+}
+
+div .member_card img {
+	float: left;
+//	margin-right: 5px;
+}
+
+.member_info {
+	float: left;
+	text-align: center;
+	width: 250px;
+	height: 60px;
+	font-size: 14px;
+}
+
+.member_name {
+	margin: 0;
+	padding: 0;
+//	background: red;
+//	width: 200px;
+}
+
+.member_info a {
+	font-size: 12px;
+	text-decoration: none;
+	color: #4F81BD;
+}
+
+.committies {
+//	background: orange;
+	margin-top: 2px;
+	float: left;
+	text-align: center;
+	width: 250px;
+	height: 48px;
+	font-size: 11px;
+}
+
+.committies a {
+	text-decoration: none;
+	color: #8A9D3C;
+}
+
+/* Committees Page */
+
+.group_detail {
+//	display: none;
+}
+
+#groups a {
+	text-decoration: none;
+}
+
+/* Agendas and Minutes Page */
+
+#agendas table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#agendas th {
+	font-size: 14px;
+	text-align: left;
+	background: white;
+}
+
+#agendas td {
+	font-size: 14px;
+}
+
+#agendas a {
+	color: #4F81BD;
+	text-decoration: none;
+}
+
+#agendas table tr {
+//	background: #DDDDDD;
+}
+
+#agendas table .alternate {
+	background: #F4ECA2;
+}
+
+/* Agenda template */
+
+#agenda_html p {
+	font-size: 14px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+#agenda_html .agenda_section {
+//	font-weight: bold;
+}
+
+#agenda_html .agenda_item {
+	margin-left: 40px;
+}
+
+#agenda_html .agenda_item a {
+//	font-size: 12px;
+	color: #4F81BD;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#business .member_card {
+//	border: 1px solid green;
+	background: white;
+	width: 180px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#business .member_name {
+	width: 180px;
+	font-size: 12px;
+}
+
+#business .twobytwo {
+	margin-left: -15px;
+	margin-top: 10px;
+	height: 75px;
+	width: 800px;
+}
+
+#business .member_info {
+	width: 180px;
+}
+
+#code ul {
+	float: left;
+}
+
+#code img {
+	text-wrap:right;
+	float: right;
+	margin-right: 100px;
+	margin-top: 40px;
+}
+
+/* Contacts */
+
+#contacts {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#contacts a {
+	text-decoration: none;
+}
+
+/* License Center */
+
+#license_center li{
+	font-size: 14px;
+}
+
+/* Utility Rates */
+
+#rates table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#rates th {
+	font-size: 14px;
+	text-align: left;
+	background: white;
+}
+
+#rates table .title {
+	font-weight: bold;
+}
+
+#rates td {
+	font-size: 14px;
+	width: 50%;
+}
+#rates table .alternate {
+	background: #F4ECA2;
+}
+
+#rates h3 {
+	color: #4F81BD;
+}
