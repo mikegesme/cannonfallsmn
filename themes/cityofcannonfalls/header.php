@@ -59,7 +59,24 @@
 		<div id="side_menu">
 			<div id="side_menu_links">
 				<ul>
-					<li id="menu_home"><a href="/">Home</a></li>
+					<?php 
+
+					$menu = wp_get_nav_menu_object('primary');
+					$menu_items = wp_get_nav_menu_items($menu->term_id);
+
+					echo "<pre>";
+					// print_r($menu_items);
+					echo "</pre>";
+
+					foreach($menu_items as $key => $menu_item) {
+						$id = "menu_" . $menu_item->title;						
+						if (!$menu_item->menu_item_parent) {
+							echo "<li id=" . $id . "><a href=" . $menu_item->url . ">" . $menu_item->title . "</a></li>";
+						}
+					}
+
+					?>
+<!--					<li id="menu_home"><a href="/">Home</a></li>
 					<li id="menu_government"><a href="#">Government</a></li>
 						<div class="menu_sublist" id="menu_government_list">
 							<ul>
@@ -87,6 +104,7 @@
 					<li id="menu_code"><a href="code.php">Code, Charter, & Plan</a></li>
 					<li id="menu_resources"><a href="resources.php">Maps & Resources</a></li>
 					<li id="menu_contacts"><a href="contacts.php">Contacts</a></li>
+		-->
 				</ul>
 			</div>
 			<div id="welcome">
